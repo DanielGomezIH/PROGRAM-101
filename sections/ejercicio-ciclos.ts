@@ -1,13 +1,12 @@
 // Ejercicio Ciclo
 
 export let base = 10;
-let limit = 50;
-let value = 1;
+export let limit = 50;
 
 // For
 
-for (let base = 10; base <= limit; base += 10) {
-  console.log(10, "x", value++, "=", base);
+for (let i = 1; i <= limit; i++) {
+  console.log(10, "x", i, "=", base * i);
 }
 
 // Do While
