@@ -5,7 +5,7 @@ import { convertPoundsKgs } from "../helpers/pounds-kgs";
 
 let libras = 150;
 
-let kgs = 0.453592 * 150;
+let kgs = 0.453592 * libras;
 
 console.log(libras, "libras es igual a:", kgs, "Kilogramos");
 
