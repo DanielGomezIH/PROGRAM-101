@@ -1,18 +1,18 @@
 class Car {
-  brand: string;
+  readonly brand: string;
   doors: number;
   fuelTank: number;
   isRunning: boolean;
   type: string;
 
-  createdAt: number;
+  readonly createdAt: number;
 
-  constructor() {
-    this.brand = "No Brand";
+  constructor(brand: string, type: string) {
+    this.brand = brand;
     this.doors = 0;
     this.fuelTank = 0;
     this.isRunning = false;
-    this.type = "No type";
+    this.type = type;
 
     this.createdAt = 123456789;
   }
@@ -47,7 +47,7 @@ class Car {
   }
 }
 
-let myMazda = new Car();
+let myMazda = new Car("Mazda", "Sedan");
 
 console.log(myMazda);
 myMazda.fillTank(50);
