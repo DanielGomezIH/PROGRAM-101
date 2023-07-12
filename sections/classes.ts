@@ -1,11 +1,11 @@
 export class Car {
-  readonly brand: string;
+  public readonly brand: string;
   doors: number;
   fuelTank: number;
   isRunning: boolean;
   type: string;
 
-  readonly createdAt: number;
+  private readonly createdAt: number;
 
   constructor(brand: string, type: string) {
     this.brand = brand;
